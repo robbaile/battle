@@ -27,4 +27,8 @@ describe Player do
         player2.attack(subject)
         expect(subject.hit_points).to eq 90
     end
+
+    it 'should give me a message when I get hit' do 
+        expect(subject.damage).to eq "You have been hit"
+    end
 end

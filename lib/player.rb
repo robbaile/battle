@@ -14,6 +14,9 @@ class Player
 
     def damage
         @hit_points -= 10
+        "You have been hit"
     end
+
+
 
 end

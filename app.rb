@@ -1,10 +1,10 @@
 require 'sinatra/base'
-# require './lib/player.rb'
-# require './lib/game.rb'
+require_relative './lib/game.rb'
 
 class Battle < Sinatra::Base
+    @game = nil
     get '/' do 
-        "Hello world"
+        erb :home
     end
     run! if app_file == $0
 end 

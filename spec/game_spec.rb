@@ -13,4 +13,9 @@ describe Game do
         subject.attack
         expect(subject.player1.is_playing).to eq true
     end
+
+    it 'should end the game' do 
+        18.times { subject.attack }
+        expect(subject.attack).to eq "Rob has won the game"
+    end
 end
